@@ -1,0 +1,12 @@
+N = int(input())
+a = 1
+
+while True:
+    if N == 1 or N == 2:
+        print(N)
+
+    square = 2 ** a
+    if 2 ** a < N <= 2 ** (a+1):
+        print((N - (2**a)) * 2)
+        break
+    a += 1
