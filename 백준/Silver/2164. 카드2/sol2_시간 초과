@@ -1,0 +1,12 @@
+import sys
+N = int(sys.stdin.readline())
+N_li = []
+
+for i in range(1, N+1):
+    N_li.append(i)
+
+for i in range(N - 1):
+    N_li.pop(0)
+    N_li.append(N_li.pop(0))
+
+print(*N_li)
